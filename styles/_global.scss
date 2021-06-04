@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* VARIABLES */
+// $blue-gradient: linear-gradient(
+//   10deg,
+//   rgba(116, 149, 235, 1) 0%,
+//   rgba(55, 68, 195, 1) 100%
+// );
+// $blue-gradient: linear-gradient(
+//   25deg,
+//   rgb(121, 68, 160) 0%,
+//   rgba(55, 68, 195, 1) 100%
+// );
+$blue-gradient: linear-gradient(315deg, #2a2a72 0%, #0180c9 74%);
+$bg-color-nav: rgb(123, 209, 106);
+$text-color: rgb(228, 228, 228);
+$bg-blue-gray: #ecf4f5;
+
+.nav-a {
+  text-decoration: none;
+  color: rgb(228, 228, 228);
+}
+a {
+  color: #809134;
+  &:hover {
+    color: #809134;
+  }
+}
+li {
+  list-style: none;
+}
+
+/* MIX-INS */
+@mixin flex($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@media screen and(max-width:800px) {
+  body {
+    overflow-x: hidden;
+  }
+}

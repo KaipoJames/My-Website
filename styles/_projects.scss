@@ -1,0 +1,75 @@
+.main-container {
+  position: relative;
+  padding: 0.5rem;
+  width: 95%;
+  height: 95%;
+}
+.projects-container {
+  width: 100%;
+  height: 70%;
+  @include flex(column, space-evenly, center);
+
+  h2 {
+    color: black;
+    width: 100%;
+    text-align: center;
+    padding: 2rem;
+    display: flex;
+  }
+  h2:before,
+  h2:after {
+    content: "";
+    flex: 1 1;
+    border-bottom: 2px solid #000;
+    margin: auto;
+  }
+}
+.projects {
+  background: $bg-blue-gray;
+  margin: 0.5rem 0;
+  width: 110vw;
+  @include flex(column, space-evenly, center);
+}
+.projects h2 {
+  font-size: 2vw;
+}
+.projects-sub-container {
+  @include flex(row, space-evenly, center);
+}
+figure figcaption {
+  background: $bg-blue-gray;
+  width: 18vw;
+  height: 7vh;
+  border-radius: 30px;
+  text-align: center;
+  padding: 0.7rem;
+  margin: 0 0 1rem 0;
+  font-size: 1.5vw;
+}
+.project {
+  width: 100%;
+  margin: 1rem;
+
+  figure {
+    @include flex(column, space-evenly, center);
+    height: 100%;
+
+    p {
+      text-align: center;
+      font-size: 1.1vw;
+      padding: 0.5rem;
+    }
+  }
+}
+.project-img {
+  width: 37rem;
+  height: auto;
+  margin: 0.5rem;
+  border: 1px solid black;
+  border-radius: 20px;
+
+  &:hover {
+    margin-top: 0.2rem;
+    width: 37.5rem;
+  }
+}

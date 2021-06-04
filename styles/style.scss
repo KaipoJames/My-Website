@@ -1,0 +1,13 @@
+@import "./global";
+@import "./header";
+@import "./home";
+@import "./footer";
+@import "./projects.scss";
+
+/* MAIN STYLES */
+main {
+  position: relative;
+  margin-top: 45rem;
+  width: 100vw;
+  height: 200vh;
+}

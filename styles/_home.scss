@@ -1,0 +1,75 @@
+main {
+    position: relative;
+}
+.arc-shape {
+    position: absolute;
+    top: -47vh;
+    left: -14vw;
+    border: 65px solid rgb(165, 132, 50); /* the 'strokes' of the arc */
+    border: 65px solid #F7BF71; /* the 'strokes' of the arc */
+    display:inline-block;
+    min-width: 21rem; /* the width of the innermost element */
+    min-height: 25rem; /* the height of the innermost element */
+    padding: 0.5em; /* the spacing between each arc */
+    border-radius: 50%; /* for making the elements 'round' */
+    border-top-color: transparent; /* hiding the top border */
+    border-bottom-color: rgb(165, 132, 50);
+    border-bottom-color: #F7BF71;
+}
+.about-text {
+    position: absolute;
+    right: 20vw;
+    top: -3rem;
+    width: 32%;
+    height: 15vh;
+    @include flex(column, space-evenly, flex-start);
+    h2 {
+        font-size: 2rem;
+    }
+    a {
+        font-size: 1.2rem;
+    }
+}
+
+.cards {
+    padding: 2rem 0 0 4rem;
+    width: 100%;
+    height: 80vh;
+    @include flex(row, space-evenly, center);
+}
+.card {
+    @include flex(column, space-evenly, center);
+    padding: 2rem;
+    width: 25%;
+    height: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+
+    &:hover {
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        margin-bottom: 0.8rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+    p {
+        line-height: 1.5;
+    }
+    img {
+        width: 70%;
+        height: auto;
+    }
+}
+.card1 {
+    background: #272D4A;
+    color: $text-color;
+}
+.card2 {
+    margin-top: 10rem;
+}
+.card3 {
+    margin-top: 20rem;
+}
