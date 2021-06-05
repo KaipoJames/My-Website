@@ -1,7 +1,12 @@
 /* FOOTER STYLES */
+.icon-credits {
+  width: 100%;
+  height: 10vh;
+  @include flex(row, center, center)
+}
 footer {
   width: 100%;
-  height: 40vh;
+  height: 50vh;
   @include flex(column, center, center);
 }
 #footer-container {
