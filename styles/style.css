@@ -416,7 +416,7 @@ main {
 .about-text {
   position: absolute;
   right: 20vw;
-  top: -3rem;
+  top: -17vh;
   width: 32%;
   height: 15vh;
   display: -webkit-box;
@@ -479,17 +479,17 @@ main {
   width: 25%;
   height: 100%;
   border-radius: 15px;
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
 .card:hover {
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
   margin-bottom: 0.8rem;
 }
 
@@ -504,19 +504,6 @@ main {
 .card img {
   width: 70%;
   height: auto;
-}
-
-.card1 {
-  background: #272D4A;
-  color: #e4e4e4;
-}
-
-.card2 {
-  margin-top: 10rem;
-}
-
-.card3 {
-  margin-top: 20rem;
 }
 
 /* FOOTER STYLES */

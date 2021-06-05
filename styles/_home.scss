@@ -19,7 +19,7 @@ main {
 .about-text {
     position: absolute;
     right: 20vw;
-    top: -3rem;
+    top: -17vh;
     width: 32%;
     height: 15vh;
     @include flex(column, space-evenly, flex-start);
@@ -43,12 +43,14 @@ main {
     width: 25%;
     height: 100%;
     border-radius: 15px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
     transition: 0.3s;
+    // background: #272D4A;
+    // color: $text-color;
 
     &:hover {
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
         margin-bottom: 0.8rem;
     }
 
@@ -63,13 +65,9 @@ main {
         height: auto;
     }
 }
-.card1 {
-    background: #272D4A;
-    color: $text-color;
-}
-.card2 {
-    margin-top: 10rem;
-}
-.card3 {
-    margin-top: 20rem;
-}
+// .card2 {
+//     margin-top: 10rem;
+// }
+// .card3 {
+//     margin-top: 20rem;
+// }
