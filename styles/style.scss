@@ -1,10 +1,3 @@
-@import "./global";
-@import "./header";
-@import "./home";
-@import "./projects";
-@import "./music";
-@import "./footer";
-
 /* MAIN STYLES */
 main {
   position: relative;
@@ -12,3 +5,10 @@ main {
   width: 100vw;
   height: 200vh;
 }
+
+@import "./global";
+@import "./header";
+@import "./home";
+@import "./projects";
+@import "./music";
+@import "./footer";

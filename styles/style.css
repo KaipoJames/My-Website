@@ -1,3 +1,11 @@
+/* MAIN STYLES */
+main {
+  position: relative;
+  margin-top: 45rem;
+  width: 100vw;
+  height: 200vh;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -41,6 +49,7 @@ li {
   left: 0;
   width: 80vw;
   height: 95vh;
+  min-height: 40rem;
   background: linear-gradient(315deg, #2a2a72 0%, #0180c9 74%);
   border-bottom-right-radius: 200px;
   z-index: -1;
@@ -417,11 +426,26 @@ header {
     min-width: 8rem;
     min-height: 1.9rem;
   }
+  .main-text-container {
+    top: 18vh;
+  }
   #background-art-blue {
     height: 95vh;
   }
   #background-art-gray {
     height: 120vh;
+  }
+}
+
+@media screen and (max-width: 466px) {
+  main {
+    margin-top: 50rem;
+  }
+}
+
+@media screen and (max-width: 342px) {
+  main {
+    margin-top: 52rem;
   }
 }
 
@@ -676,7 +700,7 @@ main {
     padding: 1rem;
   }
   .card h3 {
-    font-size: 3.3vw;
+    font-size: 3.5vw;
   }
 }
 
@@ -1115,13 +1139,5 @@ footer {
         -ms-flex-align: center;
             align-items: center;
   }
-}
-
-/* MAIN STYLES */
-main {
-  position: relative;
-  margin-top: 45rem;
-  width: 100vw;
-  height: 200vh;
 }
 /*# sourceMappingURL=style.css.map */

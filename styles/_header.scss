@@ -5,6 +5,7 @@
   left: 0;
   width: 80vw;
   height: 95vh;
+  min-height: 40rem;
   background: $blue-gradient;
   border-bottom-right-radius: 200px;
   z-index: -1;
@@ -274,11 +275,24 @@ header {
     min-width: 8rem;
     min-height: 1.9rem;
   }
+  .main-text-container {
+    top: 18vh;
+  }
   #background-art-blue {
     height: 95vh;
   }
   #background-art-gray {
     height: 120vh;
+  }
+}
+@media screen and (max-width: 466px) {
+  main {
+    margin-top: 50rem;
+  }
+}
+@media screen and (max-width: 342px) {
+  main {
+    margin-top: 52rem;
   }
 }
 @media screen and (max-width: 335px) {
