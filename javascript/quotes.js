@@ -2,7 +2,7 @@ export const homeQuotes = [
     '"Make your life a masterpiece. Imagine no limitations on what you can be, have, or do." Quote by Brian Tracy',
     '"He who is not courageous enough to take risks, will accomplish nothing in life." Quote by Muhammad Ali',
     '"Absorb what is useful, discard what is not, add what is uniqely your own." Quote by Bruce Lee',
-    '"It is not as much about who used to be, as it is about who. you choose to be." Quote by Sanhita Baruah',
+    '"It is not as much about who you used to be, as it is about who you choose to be." Quote by Sanhita Baruah',
     '"It does not matter who you are, where you come from. The ability to triumph comes from you, always." Quote by Oprah Winfrey'
 ];
 

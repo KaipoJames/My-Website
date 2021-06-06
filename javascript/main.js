@@ -1,7 +1,9 @@
+import { Header } from "./header.js";
 
 const main = {
     init() {
         this.checkForResize();
+        Header.init();
     },
     checkForResize() {
         //Check for initial screen size before any resize occurs

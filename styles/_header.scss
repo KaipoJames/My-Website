@@ -59,9 +59,12 @@ header {
   border-radius: 2rem;
 }
 .active-text {
-  color: #9bb040;
+  color: #b0b040;
 }
-.burger {
+.burger,.x-icon {
+  display: none;
+}
+#burger-menu {
   display: none;
 }
 
@@ -189,20 +192,49 @@ header {
   .burger {
     display: flex;
     flex-direction: column;
-    width: 3rem;
-    height: 3rem;
-    z-index: 1;
+    width: 2.8rem;
+    height: 2.5rem;
     cursor: pointer;
   }
   .burger .line {
     width: 80%;
-    height: 10%;
+    min-height: 5px;
+    height: 12%;
     margin: 0.2rem;
-    background: white;
+    background: $text-color;
+  }
+  #burger-menu {
+    display: none;
+    position: absolute;
+    top: -5rem;
+    left: -5rem;
+    min-width: 130vw;
+    min-height: 130vh;
+    background: rgb(76, 114, 209);
+    z-index: 50;
+    animation: burger-menu-entrance 0.8s;
+
+    ul {
+      position: absolute;
+      top: 13%;
+      left: 20%;
+      @include flex(column, space-evenly, flex-start);
+      height: 40%;
+      li {
+        padding: 0.1rem;
+        font-size: 3rem;
+      }
+    }
+  }
+  .x-icon {
+    height: auto;
+    width: 36px;
+    z-index: 100;
+    animation: x-icon-enter 0.8s;
   }
   #background-art-blue {
     width: 85vw;
-    height: 85vh;
+    // height: 85vh;
   }
   #background-art-gray {
     height: 125vh;
@@ -252,5 +284,41 @@ header {
 @media screen and (max-width: 335px) {
   #background-art-blue {
     height: 105vh;
+  }
+}
+
+
+// KEYFRAMES
+
+@keyframes burger-menu-entrance {
+  from {
+    left: 115%;
+  }
+  to {
+    left: -5rem;
+  }
+}
+@keyframes burger-menu-exit {
+  from {
+    left: -5rem;
+  }
+  to {
+    left: 115%;
+  }
+}
+@keyframes x-icon-enter {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes x-icon-exit {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
   }
 }
