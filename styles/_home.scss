@@ -89,6 +89,16 @@ main {
     main {
         min-height: 240vh;
     }
+    .about-text {
+        right: 10vw;
+        h2 {
+            font-size: 3.5vw;
+            width: 100%;
+        }
+        a {
+            font-size: 1.2rem;
+        }
+    }
     .cards {
         margin-top: 20rem; 
         height: 100%;
@@ -108,4 +118,25 @@ main {
             font-size: 3.5vw;
         }
     }
+}
+@media screen and (max-width: 450px) {
+    .card h3 {
+        font-size: 3.9vw;
+    }
+}
+@media screen and (max-width: 400px) {
+    .about-text {
+        right: 10vw;
+        h2 {
+            font-size: 4.5vw;
+            width: 100%;
+        }
+        a {
+            font-size: 1rem;
+        }
+    }
+    .card h3 {
+        font-size: 5vw;
+    }
+
 }

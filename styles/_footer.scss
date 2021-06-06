@@ -2,7 +2,8 @@
 .icon-credits {
   width: 100%;
   min-height: 10vh;
-  @include flex(row, center, center)
+  @include flex(row, center, center);
+  text-align: center;
 }
 footer {
   width: 100%;
@@ -21,6 +22,7 @@ footer {
 }
 .links-header {
   color: rgb(44, 41, 41);
+  min-width: 7rem;
 }
 .footer-item {
   width: 20%;
