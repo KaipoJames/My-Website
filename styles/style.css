@@ -898,7 +898,7 @@ main {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  padding-top: 2rem;
+  padding: 2rem 0;
 }
 
 footer {
