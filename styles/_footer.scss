@@ -14,7 +14,7 @@ footer {
 #footer-container {
   width: 100%;
   height: 100%;
-  padding: 1rem 0 2rem 0;
+  padding: 1.1rem 0 2rem 0;
   /* background: #e9e9e9; */
   background: $bg-blue-gray;
   @include flex(row, space-evenly, flex-start);
