@@ -762,6 +762,7 @@ main {
 }
 
 .projects-container {
+  margin-top: 15rem;
   width: 100%;
   height: 70%;
   display: -webkit-box;
@@ -801,7 +802,6 @@ main {
 
 .projects {
   background: #ecf4f5;
-  margin: 0.5rem 0;
   width: 110vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -936,6 +936,7 @@ footer {
 #footer-container {
   width: 100%;
   height: 100%;
+  padding: 1rem 0 2rem 0;
   /* background: #e9e9e9; */
   background: #ecf4f5;
   display: -webkit-box;
