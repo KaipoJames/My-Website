@@ -42,6 +42,20 @@ li {
   }
 }
 
+@-webkit-keyframes entrance-from-right {
+  from {
+  }
+  to {
+  }
+}
+
+@keyframes entrance-from-right {
+  from {
+  }
+  to {
+  }
+}
+
 /* Art Styles */
 #background-art-blue {
   position: absolute;
@@ -1173,6 +1187,43 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+
+.fade-in {
+  -webkit-animation: fadeIn 1.1s ease-in-out;
+          animation: fadeIn 1.1s ease-in-out;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes enter-from-right {
+  from {
+  }
+  to {
+  }
+}
+
+@keyframes enter-from-right {
+  from {
+  }
+  to {
   }
 }
 /*# sourceMappingURL=style.css.map */
