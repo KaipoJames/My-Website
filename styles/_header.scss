@@ -11,7 +11,7 @@
   z-index: -1;
 }
 #background-art-gray {
-  width: 100vw;
+  width: 98vw;
   height: 140vh;
   background: $bg-blue-gray;
   z-index: -1;
@@ -20,7 +20,7 @@
 /* HEADER STYLES */
 header {
   position: relative;
-  width: 100vw;
+  width: 98vw;
   height: 10vh;
   @include flex(row, center, center);
 }

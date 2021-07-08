@@ -1,6 +1,10 @@
 main {
     position: relative;
     max-height: 100vh;
+    width: 98vw;
+    .container {
+        width: 98vw;
+    }
 }
 .arc-shape {
     position: absolute;
@@ -33,7 +37,7 @@ main {
 
 .cards {
     padding: 2rem 0 2rem 4rem;
-    width: 100%;
+    width: 98vw;
     height: 80vh;
     @include flex(row, space-evenly, center);
 }
@@ -74,6 +78,14 @@ main {
     .card {
         padding: 1rem;
         width: 28%;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .main-text-top-bar {
+        width: 35vw;
+        p {
+            font-size: 0.9rem;
+        }
     }
 }
 @media screen and (max-width: 745px) {
@@ -119,9 +131,17 @@ main {
         }
     }
 }
+@media screen and (max-width: 465px) {
+    .main-text-top-bar p {
+        font-size: 0.7rem;
+    }
+}
 @media screen and (max-width: 450px) {
     .card h3 {
         font-size: 3.9vw;
+    }
+    .main-text-top-bar {
+        min-height: 7vh;
     }
 }
 @media screen and (max-width: 400px) {

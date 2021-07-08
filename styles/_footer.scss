@@ -1,10 +1,10 @@
 /* FOOTER STYLES */
 .icon-credits {
-  width: 100%;
+  width: 90%;
   min-height: 10vh;
   @include flex(row, center, center);
   text-align: center;
-  padding: 2rem 0;
+  padding: 2rem 1rem;
 }
 footer {
   width: 100%;
@@ -151,5 +151,50 @@ footer {
   .footer-item {
     min-width: 30vw;
     @include flex(column, center, center);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #social-link-icons li a .fab {
+    font-size: 2rem;
+  }
+  #footer-container {
+    font-size: 1.5rem;
+    min-height: 70vh;
+    @include flex(column, space-evenly, flex-start);
+
+    #footer-links {
+      left: unset;
+      bottom: unset;
+      height: unset;
+      top: 1rem;
+    }
+
+    #footer-nav-div {
+      margin-top: 0;
+    }
+
+    .footer-item {
+      width: 70%;
+      margin-left: 9%;
+      @include flex(column, flex-start, flex-start);
+      .second,
+      .nav-a {
+        margin-top: 0.2rem;
+      }
+    }
+    .mahalo {
+      display: none;
+    }
+
+  }
+
+  #bottom-rect p {
+    text-align: center;
+  }
+
+  #footer-contact #address {
+    margin: 0;
+    margin-top: 0.5rem;
   }
 }
