@@ -11,7 +11,8 @@
   z-index: -1;
 }
 #background-art-gray {
-  width: 98vw;
+  position: absolute;
+  width: 100vw;
   height: 140vh;
   background: $bg-blue-gray;
   z-index: -1;

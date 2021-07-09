@@ -62,8 +62,10 @@
                 <a href="#links-ref" class="nav-a button"><button class="links-button">Links</button></a>
                 <p class="link-text">Follow me on Social Media</p>
             </div>
-            <h2>My Projects</h2>
-            <p>Scroll down to find my recent projects or click the button below to view all of my projects on GitHub.</p>
+            <h2>My Personal Portfolio</h2>
+            <p>Scroll down to find an interactive grid display of the projects I am most proud of! 
+              Hover over any project to find more info about it!
+            </p>
             <p id="quote"></p>
         </div>
         <div class="main-img-container">
@@ -71,50 +73,49 @@
         </div>
     </header>
 
-    <main>
-      <div class="arc-shape fade-in"></div>
-      <div class="main-container">
-        <!-- prettier-ignore -->
-        <section class="projects-container">
-                <div class="websites projects">
-                    <h2>Websites</h2>
-                    <div class="projects-sub-container">
-                        <div class="project" id="ono-grindz-project">
-                            <figure>
-                                <figcaption id="ono-grindz-caption" class="caption">Ono Grindz</figcaption>
-                                <a href="https://603acd0b3393c17f9e882e8b--ono-grindz.netlify.app/index.html" target="_blank"><img id="ono-grindz-img" class="project-img" src="./img/onoGrindz.png" alt="ono-grindz-pic"></a>
-                                <p>A static site using HTML, CSS, and JavaScript with Jquery to create a photo gallery.</p>
-                            </figure>
-                        </div>
-                        <div class="project" id="music-theory-project">
-                            <figure>
-                                <figcaption id="theory-site-caption" class="caption">Music Theory</figcaption>
-                                <a href="https://music-theory-underground.netlify.app/src/dictionary/dictionary.html" target="_blank"><img id="theory-site-img" class="project-img" src="./img/theorySite.png" alt="theorySite-pic"></a>
-                                <p>A static site using tonaljs to create an interactive chord chart and piano keyboard. </p>
-                            </figure>
-                        </div>
-                    </div>
-                </div>
-                <div class="web-apps projects">
-                    <h2>Web Applications</h2>
-                    <div class="projects-sub-container">
-                        <div class="project" id="calculator-project">
-                            <figure>
-                                <figcaption id="calculator-caption" class="caption">Calculator App</figcaption>
-                                <a href="https://calculator-web-app-kaipo.netlify.app/" target="_blank"><img id="calculator-img" class="project-img" src="./img/calculator.png" alt="theorySite-pic"></a>
-                                <p>A simple calculator app built with plain HTML, CSS, and JavaScript.</p>
-                            </figure>
-                        </div>
-                        <div class="project" id="vending-machine-project">
-                            <figure>
-                                <figcaption id="vending-caption" class="caption">Vending Machine</figcaption>
-                                <a href="https://vending-machine-kaipo.netlify.app/" target="_blank"><img id="vending-img" class="project-img" src="./img/vending.png" alt="vending-machine-pic"></a>
-                                <p>An interactive vending machine. Make a selection and enter change.</p>
-                            </figure>
-                        </div>
-                    </div>
-                </div>
-            </section>
+    <main id="project-main">
+      <div id="project-arc-shape" class="arc-shape fade-in"></div>
+
+      <div id="main-container">
+          <div id="projects">
+              <div class="projects-child" id="title">
+                <h2>My Projects</h2>
+              </div>
+              <!-- <div class="projects-child" id="options">
+                  <h3 class="option">All</h3>
+                  <h3 class="option">Websites</h3>
+                  <h3 class="option">Web Apps</h3>
+              </div> -->
+              <div class="projects-child" id="projects-container">
+                  <div class="project" id="project1">
+                    <img class="project-img" src="./img/projects/comfortfood.png" alt="project1">
+                  </div>
+                  <div class="project" id="project2">
+                    <img class="project-img" src="./img/projects/calculator.png" alt="project2">
+                  </div>
+                  <div class="project" id="project3">
+                    <img class="project-img" src="./img/projects/filechart.png" alt="project3">
+                  </div>
+                  <div class="project" id="project4">
+                    <img class="project-img" src="./img/projects/theorySite.png" alt="project4">
+                  </div>
+                  <div class="project" id="project5">
+                    <img class="project-img" src="./img/projects/onoGrindz.png" alt="project5">
+                  </div>
+                  <div class="project" id="project6">
+                    <img class="project-img" src="./img/projects/virtual-keyboard.png" alt="project6">
+                  </div>
+                  <div class="project" id="project7">
+                    <img class="project-img" src="./img/projects/kuleana.png" alt="project7">
+                  </div>
+                  <div class="project" id="project8">
+                    <img class="project-img" src="./img/projects/vending.png" alt="project8">
+                  </div>
+                  <div class="project" id="project9">
+                    <img class="project-img" src="./img/projects/periodic-table.png" alt="project9">
+                  </div>
+              </div>
+          </div>
       </div>
     </main>
 
@@ -155,7 +156,7 @@
             </div>
             <div class="footer-item" id="footer-contact">
                 <h3>Contact Info</h3>
-                <address class="second">
+                <address class="address second">
                     Kaipo Wilmeth <br>
                     kaipojames12@gmail.com <br>
                     808-861-0013
